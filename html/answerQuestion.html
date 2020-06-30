@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no,initial-scale=1.0">
+    <title>常见问题解答</title>
+    <script type="text/javascript" src="../js/jquery-2.2.3.min.js?ver=${version}"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./payAlertCommon.css"/>-->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            text-size-adjust: none;
+            font-size: 14px;
+            color: #666;
+            font-family: Apple LiGothic Medium, Microsoft YaHei, SimSun, Arial, Helvetica, sans-serif;
+            background-color: #f4f3f2;
+        }
+        p {
+            text-indent:2em;
+            margin: 2px 0px;
+        }
+        h4 {
+            margin: 0px 0px;
+        }
+
+        .back_ground {
+            width: 100%;
+            background: url(../img/question_ground.png) no-repeat center center;
+            background-size: 100% 200px;
+            background-position: 0px 0px;
+        }
+
+        .merchant_bg_default {
+            width: 100px;
+            height: 100px;
+            background-image: url('data:image/png;base64,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');
+            background-size: 100px 100px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            position: relative;
+            bottom: 51px;
+            margin: auto;
+        }
+
+        .div_merchant_title_default{
+            margin: auto;
+            text-align: center;
+            position: relative;
+            bottom: 75px;
+        }
+
+        .ftp_font_size12 {
+            font-size: 12px;
+        }
+
+        .ftp_text_align_center {
+            text-align: center;
+        }
+
+        .ftp_line_height42 {
+            line-height: 42px;
+        }
+
+        .ftp_color_dark_grey {
+            color: #333;
+        }
+
+        .ftp_color_normal_grey {
+            color: #666;
+        }
+
+        .ftp_color_light_grey {
+            color: #999;
+        }
+
+        .company_bold{
+            font-weight:500;
+        }
+
+        .span_merchant_title {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 22px;
+            border-radius: 15px;
+            background: #3FA0FF;
+            width: 80px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+<div class="back_ground" style="display: none;">
+    <div class="" style="margin-left:12px;margin-right:12px;padding-top:0px;">
+        <div class="" style="position: relative;top: 40px;">
+            <!--merchant_section_default-->
+            <div class="" style="margin-top: 0px;padding-top: 25px;padding-bottom: 20px;-moz-box-shadow:0 6px 6px rgba(224,236,248,0.9);-webkit-box-shadow:0 6px 6px rgba(224,236,248,0.9);box-shadow:0 6px 6px rgba(224,236,248,0.9);background-color:#fff;border-radius:5px;">
+                <div class="merchant_bg_default" style="width: 75px;height: 75px;background-size: 75px 75px;"></div>
+                <div class="div_merchant_title_default" style="margin-top: 5px;">
+                    <span class="span_merchant_title" style="width: auto;padding: 0 10px;">常见问题解答</span>
+                </div>
+
+                <div style="margin-top: -60px;">
+                    <!--<span style="color: #004990;">外贸信托小微金融</span>-->
+                </div>
+
+                <!--还款方式-->
+                <div style="text-align: left;padding: 0px 20px;padding-bottom: 20px;">
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <!--background-image: -webkit-linear-gradient(to right,#3FA0FF,#ffffff);background-image: -webkit-linear-gradient(left,#3FA0FF,#ffffff);background-image: linear-gradient(to right,#3FA0FF,#ffffff);-->
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>1、Q：借款卡中用于还款的钱一直在为什么不进行扣划或者扣划不成功？
+                        </div>
+                    </div>
+                    <p>A：当前关于代扣出现的问题部分是由于您的发卡行身份验证和预留手机不一致的问题导致，您与发卡行进行联系开通在线支付功能并核实您预留银行手机号是否一致，如不一致及时反馈我司<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</p>
+                    <p>同时，为了不影响您正常还款，建议您可以直接还款至信托计划对公账户，对公账户在贷款合同中有明确约定，若您忘记，可以及时联系<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>2、Q：使用微信公众号还款无法在线支付是什么问题？
+                        </div>
+                    </div>
+                    <p>A：目前是您没有开通网银的问题。您可联系发卡行开通在线支付功能，同时要确认微信钱包里务必绑定您的还款储蓄卡。</p>
+                    <p>如果在线支付仍旧出现问题，建议您可以直接还款至信托计划对公账户，对公账户在贷款合同中有明确约定，若您忘记，可以及时联系<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>3、Q：使用微信公众号还款遇到异常提示是为什么？
+                        </div>
+                    </div>
+                    <p>A：您看到微信有异常提醒请不要担心，是因为微信端有金额和还款次数的安全提示，此公众号是我司小微金融为借款人开通的还款渠道之一，您可以继续操作还款即可。</p>
+                    <p>建议您还可以直接还款至信托计划对公账户，对公账户在贷款合同中有明确约定，若您忘记，可以及时联系<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>4、Q：使用微信支付为什么不能一次结清？
+                        </div>
+                    </div>
+                    <p>A：当前我司公众号设定为只能每期还，如果想一次结清需要一期期多次操作还款，同时也会出现多次还款微信安全提示的问题；这个问题我们已经正在解决。</p>
+                    <p>建议您可以直接还款至信托计划对公账户，对公账户在贷款合同中有明确约定，若您忘记，可以及时联系<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>5、Q：为何使用微信公众号还款会出现页面不稳定或无法显示等情况？
+                        </div>
+                    </div>
+                    <p>A：您遇到微信还款不稳定是因为正在进行系统升级，给您造成的不便敬请理解。</p>
+                    <p>建议您还可以直接还款至信托计划对公账户，对公账户在贷款合同中有明确约定，若您忘记，可以及时联系<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>6、Q：已经收到我司短信使用“外贸信托小微金融公众号”，但还款时候不会操作操作导致逾期，出现滞纳金情况怎么处理？
+                        </div>
+                    </div>
+                    <p>A：如果有这样的情况出现，请您拨打<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>，会尽快解决。如果还是无法使用微信公众号还款，建议您还可以直接还款至信托计划对公账户，对公账户在贷款合同中有明确约定，若您忘记，可以及时联系<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>7、Q：我申请贷款还款方式类型是什么？
+                        </div>
+                    </div>
+                    <p>A：（1）若您的还款方式为等额本息（按月计息），即每月按相等的金额偿还贷款本息，其中每月贷款利息按月初剩余贷款本金计算，每月偿还本金为月还款额减当月贷款利息。以月利率为例，月利率=每期偿还利息/期初贷款本金。</p>
+                    <p>（2）若您的还款方式是等额本息（按日计息），即分期偿还贷款本息，其中每期贷款利息按期初剩余贷款本金计算，每期偿还本金为当期还款额减当期贷款利息。以当期利率为例，当期利率=每期偿还利息/期初贷款本金，日利率=当期利率/当期天数。</p>
+                    <p>（3）若您的还款方式为等本等息，即每月应还的本金相等，利息也相等，每月还款额相等。以月利率为例，月利率=每期偿还利息/初始贷款本金。</p>
+                    <p>（4）若您的还款方式为先息后本，即在还款期内每月先付利息，到还款期限结束后一次性偿还本金和最后一期利息。以月利率为例，月利率=每期偿还利息/初始贷款本金。年利率=每月偿还利息/初始贷款本金*12。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="display: flex;margin: 10px 0px;">
+                        <!--<a style="background:#3FA0FF;display:inline-block;border-radius:50px;width:6px;height:6px;position:relative;top:7px;margin:0px 3px 0px 0px;"></a>-->
+                        <div style="font-weight: 600;font-size: 14px;">
+                            <span style="color: #3FA0FF;margin-right: 3px;">●</span>8、Q：我申请贷款贷款利率是如何计算的？
+                        </div>
+                    </div>
+                    <p>A：如贷款本金为M元，还款期数为n期，第i期（i=1,2,…,n）的还款金额为I(i)元，则该笔贷款的实际月利率为R，R的计算公式如下：M=∑I(i)/(1+R)^i；该笔贷款的实际年利率为R*12。</p>
+                    <p>感谢您的支持！</p>
+
+                    <div style="font-weight: 600;font-size: 14px;background-color: #f4f3f2;padding: 2.66666667vw;border-radius:2.66666667vw;margin-top: 2.66666667vw;">感谢您对外贸信托的信任，为更好的提供贷款服务，若您还有其他问题，欢迎致电外贸信托个人贷款服务电话<a href="tel:400-049-8555" style="text-decoration: underline;">400-049-8555</a>。</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".back_ground").css("display","block");
+    });
+</script>
+</body>
+
+</html>
